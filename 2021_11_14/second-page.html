@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="second-page.css" />
+
+    <title>로그인 화면 구현</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <span class="header-txt">로그인 또는 회원가입</span>
+        <button type="button" class="header__btn">X</button>
+      </header>
+      <main class="main">
+        <div class="main__txt-cont">
+          <ul class="main__txt">
+            <li class="main__txt__item">오늘도 좋은 하루 되세요 🎉</li>
+            <li class="main__txt__item">런닝 매일 5km 같이 하실래요? 🏃🏻‍♀️</li>
+            <li class="main__txt__item">모여서 각자 코딩! 👩🏻‍💻</li>
+            <li class="main__txt__item">게임 한판 하러갈래요? 🎮</li>
+            <li class="main__txt__item">오늘도 좋은 하루 되세요 🎉</li>
+          </ul>
+        </div>
+        <form class="main__form">
+          <label for="id"></label>
+          <input
+            id="id"
+            type="text"
+            placeholder="아이디"
+            required
+            class="main__form__input input-id"
+          />
+          <label for="password"></label>
+          <input
+            id="password"
+            type="text"
+            placeholder="비밀번호"
+            required
+            class="main__form__input input-password"
+          />
+          <div class="main__form__sustain-login">
+            <input
+              type="checkbox"
+              id="check-box"
+              class="main__form__sustain-login__check-box"
+            />
+            <label for="check-box" class="main__form__sustain-login__label"
+              >로그인 상태 유지
+            </label>
+          </div>
+          <button type="submit" class="main__form__btn">로그인</button>
+        </form>
+        <div class="main__join-find-user">
+          <a href="#" class="main__join">회원가입</a>
+          <a href="#" class="main__find-user">아이디 / 비밀번호찾기</a>
+        </div>
+        <section class="main__cont-links">
+          <div class="main__cont-links__txt">또는</div>
+          <a
+            href="http://www.google.com"
+            target="_blank"
+            class="main__cont-links__link login-goole"
+            >구글 계정으로 로그인</a
+          >
+          <a
+            href="http://www.facebook.com"
+            target="_blank"
+            class="main__cont-links__link login-facebook"
+            >페이스북 계정으로 로그인</a
+          >
+          <a
+            href="http://www.naver.com"
+            target="_blank"
+            class="main__cont-links__link login-naver"
+            >네이버 계정으로 로그인</a
+          >
+          <a
+            href="http://www.kakao.com"
+            target="_blank"
+            class="main__cont-links__link login-kakao"
+            >카카오톡 계정으로 로그인</a
+          >
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
