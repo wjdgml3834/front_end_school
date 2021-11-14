@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="second-page.css" />
+
+    <title>로그인 화면 구현</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <span class="header-txt">로그인 또는 회원가입</span>
+        <!-- header에서 닫기 버튼인 x표시를 버튼으로해야할지, 가상요소로 해야할지 모르겠습니다. 
+        (네이버는 보니까 after로 하긴했던군요)
+        제 생각에는 의미없는 이미지는 아니라서, 가상요소로 하면 안된다고 생각해서 
+        button으로 했습니다 (시각장애인분들도 x버튼이 어딨는지는 알아야하기 때문에) -->
+
+        <!-- Button 요소의 border를 없애면, 왜 누르는감각, 모든 속성이 없어지는 것일까요? 
+        이를 해결하려면 어떡해야할까요?(버튼의 border 커스텀) -->
+        <button type="button" class="header__btn">X</button>
+      </header>
+      <main class="main">
+        <div class="main__txt-cont">
+          <ul class="main__txt">
+            <li class="main__txt__item">오늘도 좋은 하루 되세요 🎉</li>
+            <li class="main__txt__item">런닝 매일 5km 같이 하실래요? 🏃🏻‍♀️</li>
+            <li class="main__txt__item">모여서 각자 코딩! 👩🏻‍💻</li>
+            <li class="main__txt__item">게임 한판 하러갈래요? 🎮</li>
+            <li class="main__txt__item">오늘도 좋은 하루 되세요 🎉</li>
+          </ul>
+        </div>
+        <form class="main__form">
+          <label for="id"></label>
+          <input
+            id="id"
+            type="text"
+            placeholder="아이디"
+            required
+            class="main__form__input input-id"
+          />
+          <label for="password"></label>
+          <input
+            id="password"
+            type="text"
+            placeholder="비밀번호"
+            required
+            class="main__form__input input-password"
+          />
+          <div class="main__form__sustain-login">
+            <!-- input의 체크박스 쉽게 스타일링 하는 법이 궁금합니다..(너무어렵습니다)  -->
+            <input
+              type="checkbox"
+              id="check-box"
+              class="main__form__sustain-login__check-box"
+            />
+            <label for="check-box" class="main__form__sustain-login__label"
+              >로그인 상태 유지
+            </label>
+          </div>
+          <button type="submit" class="main__form__btn">로그인</button>
+        </form>
+        <div class="main__join-find-user">
+          <a href="#" class="main__join">회원가입</a>
+          <a href="#" class="main__find-user">아이디 / 비밀번호찾기</a>
+        </div>
+        <section class="main__cont-links">
+          <!-- ”또는” 부분을 구현하는 다른 좋은 방법이 있는지 궁금합니다. -->
+          <div class="main__cont-links__txt">또는</div>
+          <!-- .main__cont-links-link:nth-child(1){} 을 하면 왜 첫번째 요소가 선택이 안되고 
+          .main__cont-links-link:nth-child(2){}를 해야 첫번째 요소가 선택이 되는걸까요? -->
+          <a
+            href="http://www.google.com"
+            target="_blank"
+            class="main__cont-links__link login-goole"
+            >구글 계정으로 로그인</a
+          >
+
+          <!-- 로고 이미지 쉽게구하는 방법? png파일을 구해도 뒤에 회색이 남는데… 
+          background-image 쓸때 참...애매하더군요 -->
+          <a
+            href="http://www.facebook.com"
+            target="_blank"
+            class="main__cont-links__link login-facebook"
+            >페이스북 계정으로 로그인</a
+          >
+          <a
+            href="http://www.naver.com"
+            target="_blank"
+            class="main__cont-links__link login-naver"
+            >네이버 계정으로 로그인</a
+          >
+          <a
+            href="http://www.kakao.com"
+            target="_blank"
+            class="main__cont-links__link login-kakao"
+            >카카오톡 계정으로 로그인</a
+          >
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
