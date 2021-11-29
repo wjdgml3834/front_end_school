@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서비스비용</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <nav class="nav">
+        <a href="" class="logo-nav">
+          <img
+            src="https://assets-global.website-files.com/607d4d5b822b6cbd8755b0a4/607d4d5b822b6c4fb855b0b9_img-logo-white.svg"
+            alt="brand-logo-Adriel"
+            class="brand-img"
+        /></a>
+        <ul class="list-nav">
+          <li class="item-list"><a href="#">서비스 소개</a></li>
+          <li class="item-list"><a href="#">서비스 비용</a></li>
+          <li class="item-list"><a href="#">고객 지원</a></li>
+          <li class="item-list"><a href="#">기업 소개</a></li>
+          <li class="item-list adops-item"><a href="#">애드옵스(AdOps)</a></li>
+          <li class="item-list"><a href="#">로그인</a></li>
+          <li class="item-list join-item"><a href="#">가입하기</a></li>
+          <li class="item-list item-language"><a href="#">Korean</a></li>
+        </ul>
+      </nav>
+      <section class="section">
+        <h1 class="tit-section">
+          원하는 금액만큼만 광고하세요 <br />
+          비용을 미리 정할 수 있습니다
+        </h1>
+        <p class="txt-section">
+          광고 진행 전 초기 비용과 약정이 없습니다.
+          <br />
+          합리적인 수수료로 모든 서비스를 추가 비용없이 이용하세요.
+        </p>
+        <form action="" class="form-calculator">
+          <fieldset class="calculator price-fieldset">
+            <label for="inp-price" class="label-calculator"
+              >하루 광고 비용 (KRW)</label
+            >
+            <input
+              id="inp-price"
+              type="number"
+              class="inp-calculator"
+              value="40000"
+            />
+          </fieldset>
+          <fieldset class="calculator duration-fieldset">
+            <label for="inp-duration" class="label-calculator"
+              >광고 집행 기간</label
+            >
+            <div class="wrapper-inp-calculator">
+              <input
+                id="inp-duration"
+                type="number"
+                value="7"
+                class="inp-calculator"
+              />
+              일
+            </div>
+          </fieldset>
+          <fieldset class="result comission-fee">
+            <label class="label-calculator">수수료</label>
+            <div class="result-price">
+              ₩
+              <span class="money-comission">36,400</span>
+            </div>
+          </fieldset>
+          <fieldset class="result fieldset-total-fee">
+            <label class="label-calculator labl-total-fee">총예상비용</label>
+            <div class="result-price">
+              ₩
+              <span class="money-total">316,400</span>
+            </div>
+          </fieldset>
+        </form>
+        <a href="#" class="link link-no-agreement">약정없이 시작하기</a>
+        <a href="#" class="link link-agreement">약정하고 수수료 할인 받기</a>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

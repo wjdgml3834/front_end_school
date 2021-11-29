@@ -1,0 +1,186 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: "Noto Sans KR", sans-serif;
+  height: 200vh;
+  background-color: #f5f5f5;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-height: 50px;
+  background-color: rgba(0, 0, 0);
+  padding: 10px 0px;
+  z-index: 1;
+}
+.brand-img {
+  margin-left: 60px;
+}
+.brand-img img {
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 white);
+  filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+.list-nav {
+  width: 50%;
+  min-width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+.list-nav .item-list {
+  min-width: fit-content;
+  font-size: 1rem;
+  margin-right: 30px;
+}
+
+.item-list a {
+  font-weight: bold;
+  color: white;
+}
+
+.adops-item {
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #0054c6;
+}
+
+.adops-item a {
+  display: block;
+  margin: auto 0;
+}
+.join-item {
+  height: fit-content;
+  padding: 10px 15px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: white;
+}
+.join-item a {
+  display: block;
+  margin: auto 0;
+  font-weight: bold;
+  color: black;
+}
+
+.section {
+  text-align: center;
+}
+
+.tit-section {
+  margin-top: 80px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 50px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.tit-section::before {
+  margin: 0 auto;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(https://assets-global.website-files.com/607d4d5b822b6cbd8755b0a4/60822183a099153c90515e2b_img-logo-black.png)
+    center / 80px no-repeat;
+}
+
+.txt-section {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #64707e;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.form-calculator {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.calculator {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: white;
+}
+
+.price-fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.duration-fieldset {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.label-calculator {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+.inp-calculator {
+  text-align: right;
+  font-size: 20px;
+}
+.wrapper-inp-calculator {
+  display: flex;
+  align-items: center;
+}
+
+.result {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 12px;
+}
+
+.fieldset-total-fee {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  color: #29418d;
+}
+
+.labl-total-fee {
+  color: #29418d;
+}
+
+.result-price {
+  font-size: 20px;
+}
+
+.link {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #29418d;
+  font-size: 15px;
+
+  color: white;
+  border-radius: 20px;
+}
+.link-no-agreement {
+  padding: 12px 50px;
+}
+
+.link-agreement {
+  padding: 12px 50px;
+}
