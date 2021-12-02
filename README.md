@@ -3,7 +3,7 @@ front end shcool projects collections
 https://wjdgml3834.github.io/front_end_school/
 
 * what to eat project
-  - https://wjdgml3834.github.io/front_end_school/what-to-eat_project/what-to-eat/what-to-eat.html 
+      - https://wjdgml3834.github.io/front_end_school/what-to-eat_project/what-to-eat/what-to-eat.html 
 
 
 * 에어비앤비 로그인 페이지 구현
