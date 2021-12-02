@@ -7,7 +7,7 @@ https://wjdgml3834.github.io/front_end_school/
 
 
 * 에어비앤비 로그인 페이지 구현
-  - https://wjdgml3834.github.io/front_end_school/2021_11_14/first-page.html 
+      - https://wjdgml3834.github.io/front_end_school/2021_11_14/first-page.html 
 
 
 
