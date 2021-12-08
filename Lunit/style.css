@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: proximanova, sans-serif;
+  height: fit-content;
+  background-color: #222222;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  max-height: 100px;
+  background-color: #111;
+  padding: 10px 0px;
+  z-index: 1;
+}
+
+.links-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.brand-img {
+  margin-left: 60px;
+  margin-right: 200px;
+}
+
+.list-nav {
+  min-width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.list-nav .item-list {
+  min-width: fit-content;
+  margin-right: 70px;
+}
+
+.item-list a:not(.ai-for-cancer) {
+  color: white;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+
+.item-list a:hover {
+  color: #01c7e8;
+}
+
+.ai-for-cancer {
+  color: #01c7e8;
+}
+.util {
+  display: flex;
+  min-width: 200px;
+  align-items: center;
+  margin-right: 50px;
+}
+.util .product-require {
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin-left: 20px;
+  height: 100%;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.util .product-require:hover {
+  color: #01c7e8;
+  border: 1px solid #01c7e8;
+}
+
+.article-1 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.main-video {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.txt-wrapper-article-1 {
+  width: 100%;
+  top: 20%;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+.main_txt-article-1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.sub_txt-article-1 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 80px;
+}
+
+.link-article-1 {
+  color: white;
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+.link-article-1:hover {
+  color: #01c7e8;
+  border: 1px solid #01c7e8;
+}
+
+.article-2 {
+  width: 100%;
+  padding: 0px 50px;
+}
+
+.list-article-2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.item-article-2 {
+  border-radius: 5px;
+  width: 700px;
+  height: 900px;
+  background-color: black;
+  position: relative;
+}
+
+.graph-video {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+}
+
+.txt-wrapper-article-2 {
+  margin-top: 80px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.main_txt-article-2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 55px;
+}
+
+.sub_txt-article-2 {
+  color: gray;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.wrapper_link-article-2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0px 100px;
+}
+
+.link-article-2 {
+  color: white;
+  border: 1px solid white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper_link-article-2 .CXR:hover {
+  color: #01c7e8;
+  border: 1px solid #01c7e8;
+}
+.wrapper_link-article-2 .MMG:hover {
+  color: #ff51a0;
+  border: 1px solid #ff51a0;
+}
+
+.wrapper_link-article-2 .IO:hover,
+.wrapper_link-article-2 .PD-L1:hover {
+  color: #7291fd;
+  border: 1px solid #7291fd;
+}
